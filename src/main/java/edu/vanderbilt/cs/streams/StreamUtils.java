@@ -37,6 +37,13 @@ public class StreamUtils {
         // 2. Think of how you could use IntStream.range()
         // 3. List.subLIst will be useful to you
         // 4. A windowSize < 1 should return an empty stream
+    	
+    	String[] letters = {"a", "b", "c", "d", "e", "f"};
+    	
+    	//Display the first three letters sorted
+    	Stream.of(letters).limit(windowSize).sorted()
+    		.forEach(e -> System.out.print(e + " "));
+    	
 
         return Stream.empty();
     }
