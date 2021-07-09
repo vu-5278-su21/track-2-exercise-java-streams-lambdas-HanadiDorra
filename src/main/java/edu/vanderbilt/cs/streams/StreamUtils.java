@@ -38,14 +38,17 @@ public class StreamUtils {
         // 3. List.subLIst will be useful to you
         // 4. A windowSize < 1 should return an empty stream
     	
-    	String[] letters = {"a", "b", "c", "d", "e", "f"};
-    	
-    	//Display the first three letters sorted
-    	Stream.of(letters).limit(windowSize).sorted()
-    		.forEach(e -> System.out.print(e + " "));
-    	
-
-        return Stream.empty();
+  
+    		
+    	//Display the first three letters sorted for windowSize >1
+		  if (windowSize < 1) {
+	            return Stream.empty();
+	        } else {
+	            return IntStream.range(0, data.size() - windowSize + 1)
+	                    .mapToObj(start -> data.subList(start, start + windowSize));
+	        }
+	
+        
     }
 
     /**
