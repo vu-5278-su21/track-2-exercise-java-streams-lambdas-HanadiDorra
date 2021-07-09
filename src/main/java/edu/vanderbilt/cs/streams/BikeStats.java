@@ -24,8 +24,7 @@ public class BikeStats {
     /**
      * @ToDo:
      *
-     * Create a stream of DataFrames representing the average of the
-     * sliding windows generated from the given window size.
+     * Create a stream of DataFrames representing the average of the sliding windows generated from the given window size.
      *
      * For example, if a windowSize of 3 was provided, the BikeRide.DataFrames
      * would be fetched with the BikeRide.fusedFramesStream() method. These
@@ -42,6 +41,8 @@ public class BikeStats {
      * @return
      */
     public Stream<BikeRide.DataFrame> averagedDataFrameStream(int windowSize){
+    	
+    	
         return Stream.empty();
     }
 
@@ -57,6 +58,8 @@ public class BikeStats {
     // the same.
     //
     public Stream<LatLng> locationsOfStops() {
+    	
+    	
         return Stream.empty();
     }
 

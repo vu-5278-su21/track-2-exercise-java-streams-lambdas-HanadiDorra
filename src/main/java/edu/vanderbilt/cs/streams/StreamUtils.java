@@ -78,6 +78,8 @@ public class StreamUtils {
             // You need to update this code here to
             // return the average of the property that
             // is extracted with the function `f`
+        	
+        //HD - need to come back to this one, not understanding the question?
             return 0.0;
         };
     }
