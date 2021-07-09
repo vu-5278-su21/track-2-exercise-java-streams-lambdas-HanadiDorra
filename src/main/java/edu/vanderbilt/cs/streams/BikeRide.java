@@ -164,7 +164,8 @@ public class BikeRide {
     // stream of the specified values
     public Stream<LatLng> coordinateStream() {
     	//HD - THIS IS WRONG
-        return Arrays.stream(<LatLng>);
+    	Stream<LatLng>
+        return Arrays.asList(LatLng);
     }
 
 
