@@ -40,15 +40,14 @@ public class StreamUtils {
     	
   
     		
-    	//Display the first three letters sorted for windowSize >1
-		  if (windowSize < 1) {
-	            return Stream.empty();
-	        } else {
-	            return IntStream.range(0, data.size() - windowSize + 1)
-	                    .mapToObj(start -> data.subList(start, start + windowSize));
-	        }
-	
-        
+    	//HD
+	  if (windowSize < 1) {
+            return Stream.empty();
+        } else {
+            return IntStream.range(0, data.size() - windowSize + 1)
+                    .mapToObj(start -> data.subList(start, start + windowSize));
+        }
+    
     }
 
     /**
