@@ -80,9 +80,7 @@ public class StreamUtils {
             // return the average of the property that is extracted with the function `f`
         	
         //HD - need to come back to this one, not understanding the question?
-        	double averageProperty = window.stream()
-        	         .filter(v -> v.getType().equals(f))
-        	         .collect(Collectors.averagingLong(ToDoubleFunction::averageOfProperty));
+        	
           return 0.0;
         };
     }
