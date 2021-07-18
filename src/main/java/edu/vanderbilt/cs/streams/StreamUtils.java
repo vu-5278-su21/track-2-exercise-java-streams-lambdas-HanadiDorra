@@ -76,13 +76,11 @@ public class StreamUtils {
     public static <T> Function<List<T>, Double> averageOfProperty(ToDoubleFunction<T> f){
         return (List<T> window) -> {
             // You need to update this code here to
-            // return the average of the property that
-            // is extracted with the function `f`
+            // return the average of the property that is extracted with the function `f`
         	
         //HD - need to come back to this one, not understanding the question?
         	
-        	
-            return 0.0;
+          return 0.0;
         };
     }
 
