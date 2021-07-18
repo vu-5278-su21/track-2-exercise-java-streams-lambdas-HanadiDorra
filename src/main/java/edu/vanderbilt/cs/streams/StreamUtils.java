@@ -80,6 +80,8 @@ public class StreamUtils {
             // is extracted with the function `f`
         	
         //HD - need to come back to this one, not understanding the question?
+        	
+        	
             return 0.0;
         };
     }
