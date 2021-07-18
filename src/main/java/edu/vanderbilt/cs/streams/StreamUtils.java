@@ -80,8 +80,8 @@ public class StreamUtils {
             // return the average of the property that is extracted with the function `f`
         	
         //HD - need to come back to this one, not understanding the question?
-        	
-          return 0.0;
+    
+        return 0.0;
         };
     }
 
