@@ -3,6 +3,7 @@ package edu.vanderbilt.cs.streams;
 import java.util.List;
 import java.util.function.Function;
 import java.util.function.ToDoubleFunction;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -79,7 +80,9 @@ public class StreamUtils {
             // return the average of the property that is extracted with the function `f`
         	
         //HD - need to come back to this one, not understanding the question?
-        	
+        	double averageProperty = window.stream()
+        	         .filter(v -> v.getType().equals(f))
+        	         .collect(Collectors.averagingLong(ToDoubleFunction::averageOfProperty));
           return 0.0;
         };
     }
